@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hello World</title>
+	</head>
+	<body>
+		<h1>Hello World</h1>
+		<img src="cat.jpg" alt="cat pic">
+		<audio controls>
+			<source src="cartoon_swell_warbling.mp3" type="audio/mpeg">
+		</audio>
+		
+		<video width="320" height="240" controls>
+			<source src"raft.mp4" type="video/mp4">
+		</video>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/EJZ5S_iX478" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</body>
+</html>
