@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pokemon Job Application</title>
+</head>
+<body>
+
+<h2>New Pokemon Club Officer Application</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post" oninput="result.value=parseInt(p.value)">
+
+	<fieldset>
+		<legend>Account</legend>
+		<div class="field">
+			<label>Username:</label> 
+			<input type="text" name="username">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat password:</label> 
+			<input type="password" name="password_r">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Information</legend>
+		<div class="field">
+			<label>First name:</label> <input type="text" name="firstname"><br> 
+			<label>Last name:</label> <input type="text" name="lastname"><br> 
+		</div>
+		<div class="field">
+			<label>Street Address:</label> 
+			<input type="text" name="street">
+		</div>
+		<div class="field">
+			<label>City/Town:</label> 
+			<input type="text" name="city/town">
+		</div>
+		<div class="field">
+			<label>Region:</label> 
+			<select name="region">
+				<option value="" selected="true">Choose a Region</option>
+				<option value="Kanto">Kanto</option>
+				<option value="Jhoto">Jhoto</option>
+				<option value="Hoenn">Hoenn</option>
+				<option value="Sinnoh">Sinnoh</option>
+				<option value="Unova">Unova</option>
+				<option value="Kalos">Kalos</option>
+				<option value="Alola">Alola</option>
+				<option value="Galar">Galar</option>
+			</select>
+		</div>
+		<div class="Preferred Pokemon Type">
+			<label>Type:</label> 
+			<input type="text" name="type">
+		</div>
+		<div class="Number of Gym Badges">
+			<label>Gym Badges:</label> 
+			<input type="text" name="gym badges">
+		</div>
+		
+		<div>
+			<label>Best Pokemon Levels(Input Your Best Pokemon's Levels):</label>
+			1 
+			<input type="range" id="p" name="p" value="50">
+			100 
+			= <output name="result" for="p ">50</output>
+			
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Availability</legend>
+		<div class="field">
+			<label>Have you resided in the desired work areas for more than 6 months?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>What type of position are you seeking? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_ef" value="elite four">Elite Four</li>
+				<li><input type="checkbox" name="position_gl" value="gym leader">Gym Leader</li>
+				<li><input type="checkbox" name="position_t" value="trainer">Trainer</li>
+			</ul>
+		</div>
+		<div class="field">
+		
+		<div class="field">
+			<label>Which region locations are you seeking to work in? (control/command click for all that apply)</label>
+				<select id="work region" name="work region" size="4" multiple>
+					<option value="Kanto">Kanto</option>
+					<option value="Jhoto">Jhoto</option>
+					<option value="Hoenn">Hoenn</option>
+					<option value="Kalos">Kalos</option>
+				</select>
+		</div>
+		
+		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Why do you deserve this position?</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe a recent past role you've taken on:</label><br>
+			<textarea name="past role" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe a hardest gym battle:</label><br>
+			<textarea name="hardest battle" rows="6" cols="60"></textarea>
+		</div>
+		
+	</fieldset>
+
+	<input type="submit" value="Submit Application">
+
+</form>
+</body>
+</html>
