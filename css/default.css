@@ -1,0 +1,46 @@
+//about page
+
+p {
+  color: green;
+}
+
+button[type="submit"] {
+  background-color: purple !important;
+}
+
+h4 {
+  font-size: 35px;
+  font-style: italic;
+}
+
+ul.list-unstyled {
+  border: dashed red 8px;
+  border-radius: 4px;
+}
+
+img:hover{
+  opacity:50%;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#infoblurb {
+  background-color: lightgray;
+}
+
+#newstag{
+  color: blue;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h6 {
+  font-family: fantasy;
+}
+
+p.slogan{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
